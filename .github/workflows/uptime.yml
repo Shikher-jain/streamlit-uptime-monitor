@@ -1,23 +1,45 @@
-name: Streamlit Uptime Monitor
+name: Uptime Monitor
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # every 5 minutes
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 jobs:
-  uptime-check:
+  check:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Make script executable
-        run: chmod +x scripts/uptime_check.sh
+      - name: Check apps uptime
+        run: |
+          echo "Starting uptime check..."
+          echo "-----------------------------"
 
-      - name: Run Uptime Check
-        run: ./scripts/uptime_check.sh
+          apps=$(jq -c '.apps[]' config/apps.json)
+
+          for app in $apps; do
+            name=$(echo $app | jq -r '.name')
+            url=$(echo $app | jq -r '.url')
+            health=$(echo $app | jq -r '.health')
+
+            echo "Checking: $name"
+
+            full_url="${url}${health}"
+
+            status=$(curl -L -s -o /dev/null -w "%{http_code}" "$full_url")
+
+            if [[ "$status" =~ ^2|3 ]]; then
+              echo "SUCCESS ($status): $name"
+            else
+              echo "FAILED ($status): $name"
+              exit 1
+            fi
+
+            echo "-----------------------------"
+          done
