@@ -1,11 +1,14 @@
 {
   "apps": [
     {
+      "name": "Portfolio App",
+      "url": "https://shikher-jain-09.streamlit.app",
+      "health": "/_stcore/health"
+    },
+    {
       "name": "Pathwise AI",
-      "url": "https://pathwise-ai-sj-09.streamlit.app/",
+      "url": "https://pathwise-ai-sj-09.streamlit.app",
       "health": "/_stcore/health"
     }
   ]
 }
-
-
