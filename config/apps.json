@@ -6,6 +6,86 @@
       "health": "/_stcore/health"
     },
     {
+      "name": "Portfolio App",
+      "url": "https://shikher-jain-09.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "Sahayak",
+      "url": "https://sahayak-sj-09.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "Housing Inspection v1",
+      "url": "https://ai-housing-inspection-sj-09.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "Housing Inspection v2",
+      "url": "https://ai-housing-inspection-sj-0906.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "AttendEase",
+      "url": "https://attendease-shikher-09.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "Chatbot",
+      "url": "https://aahikherjain09chatbot.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "Flights App",
+      "url": "https://shikherjain09-flights-app.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "Fake News Detection",
+      "url": "https://fake-news-detection-shikher09.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "Insurance Prediction",
+      "url": "https://insurance-prediction-shikher09.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "GDP Dashboard",
+      "url": "https://shikherjain09gpd-dashboard.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "Skill Advisor",
+      "url": "https://shikherjain09skilladvicer.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "Census App",
+      "url": "https://shikherjain09censusapp.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "Next Word Prediction",
+      "url": "https://tp35-next-word-prediction.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "SG App",
+      "url": "https://shikherjain09-sg.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "IPL Data",
+      "url": "https://shikherjain09ipldata.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
+      "name": "Student Management",
+      "url": "https://shikherjain09-student-management.streamlit.app/",
+      "health": "/_stcore/health"
+    },
+    {
       "name": "Pathwise AI",
       "url": "https://pathwise-ai-sj-09.streamlit.app",
       "health": "/_stcore/health"
